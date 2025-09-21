@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+import 'screens/notes_screen.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(NotesApp());
 }
 class NotesApp extends StatelessWidget {
   const NotesApp({super.key});
@@ -17,7 +18,7 @@ class NotesApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: NotesScreen(),
+      home: const NotesScreen(),
     );
   }
 }
